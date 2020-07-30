@@ -81,6 +81,19 @@ In every iteration of selection sort, the minimum element (considering ascending
 
 [Read more about the selection algorithm here](https://www.geeksforgeeks.org/selection-sort/)
 
+### Shell Sort Summary
+
+ShellSort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved. The idea of shellSort is to allow exchange of far items. In shellSort, we make the array h-sorted for a large value of h. We keep reducing the value of h until it becomes 1. An array is said to be h-sorted if all sublists of every h’th element is sorted.
+
+#### Big-O Complexity
+
+|                 | Time Complexity |                 |  Space Complexity  |
+| :-------------: | :-------------: | :-------------: | :----------------: |
+|       Best      |     average     |       Worst     |        Worst       |
+|    O(n log(n))  |  O(n log(n))^2  |  O(n log(n))^2  |        O(1)        |
+
+[Read more about the shell sort algorithm here](https://www.geeksforgeeks.org/shellsort/)
+
 ### Quick Sort Summary
 
 QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
