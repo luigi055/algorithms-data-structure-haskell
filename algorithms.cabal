@@ -4,16 +4,16 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1beae446e70502b46f91dbe644d306de90d136ae526a1c6d08c677d0c43856d1
+-- hash: dae7f28243933c75e588eaa1c06df7f37dfb8a245e4b4306db470f363cbdf202
 
 name:           algorithms
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/algorithms#readme>
-homepage:       https://github.com/luigi055/algorithms#readme
-bug-reports:    https://github.com/luigi055/algorithms/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/algorithms-data-structure-haskell#readme>
+homepage:       https://github.com/luigi055/algorithms-data-structures-haskell#readme
+bug-reports:    https://github.com/luigi055/algorithms-data-structures-haskell/issues
 author:         Pedro La Rosa D.
 maintainer:     pedrolarosad@gmail.com
-copyright:      2020 Author name here
+copyright:      2020 Pedro La Rosa D
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -23,9 +23,11 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/luigi055/algorithms
+  location: https://github.com/luigi055/algorithms-data-structures-haskell
 
 library
+  exposed-modules:
+      Sort.Insertion
   other-modules:
       Paths_algorithms
   hs-source-dirs:
@@ -50,6 +52,7 @@ test-suite algorithms-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Sort.InsertionSpec
       Sort.NativeSortSpec
       Paths_algorithms
   hs-source-dirs:
