@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 25960072556e9e2e617b1be38aea8c44d146da946a298fc56cf315bff85ec508
+-- hash: aee2e7e2b0f5e1f18099eb1a5471b5e4a5f9fa8d9bd5d07adb4151630ff78ff8
 
 name:           algorithms
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Sort.Bubble
       Sort.Insertion
       Sort.Quick
       Sort.Selection
@@ -54,8 +55,8 @@ test-suite algorithms-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Sort.BubbleSpec
       Sort.InsertionSpec
-      Sort.NativeSortSpec
       Sort.QuickSpec
       Sort.SelectionSpec
       Paths_algorithms

@@ -30,7 +30,24 @@ stack test --file-watch --coverage
 
 ## Sort
 
-Let's implement the sorting algorithms that are shown here: [https://www.toptal.com/developers/sorting-algorithms](https://www.toptal.com/developers/sorting-algorithms)
+Let's implement the sorting algorithms that are shown here:
+[https://www.toptal.com/developers/sorting-algorithms](https://www.toptal.com/developers/sorting-algorithms)
+
+[Visual execution of some sorting algorithms](https://visualgo.net/en/sorting)
+
+### Bubble Sort Summary
+
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+#### Big-O Complexity
+
+|                 | Time Complexity |                 |  Space Complexity  |
+| :-------------: | :-------------: | :-------------: | :----------------: |
+|       Best      |     average     |       Worst     |        Worst       |
+|       O(n)      |     O(n^2)      |       O(n^2)    |        O(1)        |
+
+
+[Read more about the bubble algorithm here](https://www.geeksforgeeks.org/bubble-sort/)
 
 ### Insertion Sort Summary
 
