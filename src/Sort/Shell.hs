@@ -17,6 +17,7 @@ shellSortPhase k = decolumnize . map insertionSort . columnize k
 -- The full Shell sort, applying phases with arbitrarily large gap sizes according to
 -- R. Sedgewick, J. Algorithms 7 (1986), 159-173
 shellSort :: (Ord a) => [a] -> [a]
+shellSort [] = []
 shellSort xs = foldr shellSortPhase xs gaps
     where gaps = takeWhile (< length xs) sedgewick
           sedgewick = concat [[9 * 2^n - 9 * 2^(n `div` 2) + 1,
