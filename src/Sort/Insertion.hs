@@ -2,7 +2,7 @@ module Sort.Insertion (insertionSort) where
 
 insertionSort :: Ord a => [a] -> [a]
 insertionSort [] = []
-insertionSort (x:xs) = insert x (insertionSort xs)
+insertionSort (x:xs) = insert x $ insertionSort xs
   where insert :: Ord a => a -> [a] -> [a]
         insert x [] = [x]
         insert x (y:ys)
