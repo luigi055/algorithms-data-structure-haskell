@@ -94,6 +94,20 @@ ShellSort is mainly a variation of Insertion Sort. In insertion sort, we move el
 
 [Read more about the shell sort algorithm here](https://www.geeksforgeeks.org/shellsort/)
 
+### Merge Sort Summary
+
+Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See following C implementation for details.
+
+#### Big-O Complexity
+
+|                 | Time Complexity |                 |  Space Complexity  |
+| :-------------: | :-------------: | :-------------: | :----------------: |
+|       Best      |     average     |       Worst     |        Worst       |
+|    O(n log(n))  |    O(n log(n))  |    O(n log(n))  |        O(n)   |
+
+
+[Read more about the merge sort algorithm here](https://www.geeksforgeeks.org/merge-sort/)
+
 ### Quick Sort Summary
 
 QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
