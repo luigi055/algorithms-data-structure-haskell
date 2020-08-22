@@ -10,15 +10,9 @@ rpslp playerOneOption playerTwoOption
   | otherwise = "Draw!"
     where hasDefeatedTo :: String -> String -> Bool
           hasDefeatedTo item toCompare = (0<) . length $ filter (toCompare==) (getRuleByItem item)
-          hasEmptyRules = (null $ getRuleByItem playerOneOption) || (null $ getRuleByItem playerTwoOption)
+          hasEmptyRules = (null $ getRuleByItem playerOneNormalized) || (null $ getRuleByItem playerTwoNormalized)
           playerOneNormalized = map (toLower) playerOneOption
           playerTwoNormalized = map (toLower) playerTwoOption
-
-spock = "spock"
-lizard = "lizard"
-scissor = "scissor"
-rock = "rock"
-paper = "paper"
 
 getRuleByItem item
   | item == spock = [scissor, rock]
@@ -27,5 +21,10 @@ getRuleByItem item
   | item == paper = [rock , spock]
   | item == scissor = [paper , lizard]
   | otherwise = []
+    where spock = "spock"
+          lizard = "lizard"
+          scissor = "scissor"
+          rock = "rock"
+          paper = "paper"
 
 
