@@ -1,4 +1,4 @@
-module AlgoCollections.Rpslp (rpslp) where
+module KataCollections.Rpslp (rpslp) where
 
 import Data.Char (toLower)
 

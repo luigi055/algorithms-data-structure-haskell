@@ -1,6 +1,6 @@
-module AlgoCollections.RpslpSpec (spec) where
+module KataCollections.RpslpSpec (spec) where
 
-import AlgoCollections.Rpslp (rpslp)
+import KataCollections.Rpslp (rpslp)
 import Test.Hspec
 import Text.Printf (printf)
 

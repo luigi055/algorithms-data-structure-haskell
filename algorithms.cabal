@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 071b886866467bf490e54f20f29ee3335543b06820f0ae9f1d1ea6b139d4c2d6
+-- hash: becaac7ce420ed90b22a6ebe039df28b3fdfad161a706e4a5213c049efca7498
 
 name:           algorithms
 version:        0.1.0.0
@@ -27,9 +27,9 @@ source-repository head
 
 library
   exposed-modules:
-      AlgoCollections.Rpslp
       DataStructures.BinarySearchTree
       DataStructures.LinkedList
+      KataCollections.Rpslp
       Sort.Bubble
       Sort.Insertion
       Sort.Merge
@@ -60,9 +60,9 @@ test-suite algorithms-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      AlgoCollections.RpslpSpec
       DataStructures.BinarySearchTreeSpec
       DataStructures.LinkedListSpec
+      KataCollections.RpslpSpec
       Sort.BubbleSpec
       Sort.InsertionSpec
       Sort.MergeSpec
